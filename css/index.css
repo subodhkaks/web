@@ -1,0 +1,265 @@
+/* =====================
+   Global Styles
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #0f172a; /* similar to YouTube sample dark theme */
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+html, body {
+  height: 100%;
+  overflow-x: hidden; /* prevents left/right scroll */
+}
+
+
+/* =====================
+   Header & Navbar
+===================== */
+.header {
+  width: 100%;
+  background-color: #020617;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #020617;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+  position: relative;
+  padding: 5px 0;
+}
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8;
+  transition: width 0.3s ease-in-out;
+}
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  width: 100%;
+}
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #38bdf8;
+}
+
+/* Hamburger (hidden by default) */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #e5e7eb;
+  cursor: pointer;
+}
+
+/* =====================
+   Hero Section
+===================== */
+.hero {
+  max-width: 1100px;
+  margin: auto;
+  padding: 4rem 1.5rem;
+  min-height: calc(100vh - 140px); /* header + footer space */
+  display: flex;
+  align-items: center;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.hero-text h2 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h2 span {
+  color: #38bdf8;
+}
+
+.hero-text h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #cbd5f5;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #d1d5db;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.6rem;
+  background-color: #38bdf8;
+  color: #020617;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0ea5e9;
+}
+
+.hero-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: auto;
+  border: 4px solid #38bdf8;
+}
+
+/* =====================
+   Footer
+===================== */
+.footer {
+  background-color: #020617;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+.footer {
+  background-color: #020617;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0.4rem 0;
+  color: #cbd5f5;
+}
+
+/* Social Icons */
+.social-icons {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #38bdf8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #38bdf8;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #38bdf8;
+  color: #020617;
+  box-shadow: 0 0 12px #38bdf8;
+}
+
+/* Designer text */
+.designer span {
+  color: #38bdf8;
+  font-weight: 500;
+}
+
+
+/* =====================
+   Responsive Design
+===================== */
+@media (max-width: 768px) {
+  /* Show hamburger only when nav items can't fit */
+  * {
+  max-width: 100%;
+}
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #020617;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 1.5rem 0;
+    display: none;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 2.2rem;
+  }
+  .hero-image img {
+  max-width: 100%;
+}
+
+
+  .hero-image img {
+    width: 220px;
+    height: 220px;
+  }
+}
