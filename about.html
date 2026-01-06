@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me | Portfolio</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subodh Kakshapati | About</title>
+  <link rel="stylesheet" href="css/about.css">
   <script src="https://kit.fontawesome.com/73c899caab.js" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="css/about.css" />
-  <script defer src="js/index.js"></script>
 </head>
 <body>
-
-  <!-- ===== Header / Navbar ===== -->
   <header class="header">
     <nav class="navbar">
-      <h1 class="logo">MyPortfolio</h1>
+      <h1 class="logo">Subodh</h1>
 
-      <button class="hamburger" aria-label="Toggle navigation">☰</button>
-
+      <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="hamburger">
+        <i class="fas fa-bars"></i>
+      </label>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a class="active" href="about.html">About</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="videoDemo.html">Video Demo</a></li>
+        <li><a href="sitereport.html">Site Report</a></li>
       </ul>
+
     </nav>
   </header>
 
-  <!-- ===== About Section ===== -->
   <main class="about">
-
-    <div class="about-heading">
-      <h2>About</h2>
-      <p class="subtitle">Frontend developer focused on clean code, smooth UI, and great user experience.</p>
-    </div>
-
     <section class="about-grid">
-
-      <!-- Text Content -->
-       
+      <div class="about-header">
+        <h3> About </h3>
+        <p class="detail">Full stack developer focused on clean code, smoother UI and
+          amazing design</p>
+        </p>
+      </div>
       <div class="about-text">
-  <span class="intro-label">HELLO THERE</span>
-  <h3>Hi, I'm <span>Subodh Kakshapati</span></h3>
-
-  <p>
-    I am a motivated Web Development student with experience in Python and Java...
-  </p>
-</div>
-
-<div class="about-image">
-  <img src="images/aboutImage.png" alt="Profile image" />
-</div>
-
-<div class="about-buttons">
-  <a href="projects.html" class="btn primary">
-    View My Work <i class="fas fa-arrow-right"></i>
-  </a>
-  <a href="resume.pdf" class="btn outline" download>
-    Download Resume <i class="fas fa-download"></i>
-  </a>
-</div>
-
-
+        <p class="intro">HELLO THERE</p>
+        <h2>I'm <span>Subodh Kakshapati.</span></h2>
+        <p>I am a motivated fullstack developer and beginner level software developer experienced in MERN stack
+          and knows coding in JAVA and PYTHON. I have completed many projects in these field. And I am actively 
+          looking in work in real life field to gain some experience.
+        </p>
+        <div class="skills">
+          <h3>Skills:</h3>
+          <div class="skills-btn">
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">Javascript</a>
+            <a href="#">React JS</a>
+            <a href="#">MERN</a>
+            <a href="#">Figma</a>
+            <a href="#">Git</a>
+            <a href="#">Python</a>
+            <a href="#">JAVA</a>
+          </div>
+        </div>
+      </div>
+      <div class="about-buttons">
+        <a href="project.html" class="btn primary">
+          View my projects
+          <i class="fa-solid fa-arrow-right"></i> 
+        </a>
+        <a href="resume.html" class="btn outline">
+          Download resume
+          <i class="fa-solid fa-download"></i>
+        </a>
+      </div>
+      <div class="about-image">
+        <img src="/images/aboutImage.png" alt="Invalid Image">
+      </div>
     </section>
-
   </main>
 
-  <!-- ===== Footer ===== -->
   <footer class="footer">
-    <p class="copyright">
-      © Copyright <strong>Subodh Kakshapati</strong>. All Rights Reserved
-    </p>
-
+    <p>© Copyright <strong>Subodh Kakshapati</strong>. All Rights Reserved</p>
     <div class="social-icons">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/subodhkaks"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/subodh"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/subodh_kaks/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/subodh-kaks"><i class="fab fa-linkedin-in"></i></a>
     </div>
-
     <p class="designer">Designed by <span>Subodh Kakshapati</span></p>
   </footer>
-
+  
 </body>
 </html>
