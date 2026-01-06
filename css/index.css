@@ -57,6 +57,9 @@ nav{
 .nav-links a.active::after {
   width: 100%;
 }
+.nav-links a:hover{
+  color: #38bdf8
+}
 
 #nav-toggle{
   display: none;
@@ -86,6 +89,7 @@ nav{
 .hero-image {
   display: flex;
   justify-content: center;
+  grid-area: 1/2/3/3;
   order: 2;
 }
 .hero-buttons {
@@ -133,27 +137,14 @@ nav{
   gap: 0.5rem;
   transition: all 0.3s ease;
   border-radius: 10px;
-}
-.btn.primary {
   background: #38bdf8;
   color: #020617;
 }
 
-.btn.primary:hover {
+.btn:hover {
   box-shadow: 0 0 15px #38bdf8;
   transform: translateY(-2px);
   gap:0.7rem;
-}
-
-.btn.outline {
-  border: 1px solid #38bdf8;
-  color: #38bdf8;
-}
-
-.btn.outline:hover {
-  background: #38bdf8;
-  color: #020617;
-  box-shadow: 0 0 15px #38bdf8;
 }
 
 .hero-image img{
