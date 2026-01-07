@@ -1,0 +1,275 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Popins", Arial, sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+  overflow-x: hidden;
+}
+
+.header{
+  height: 80px;
+  background: #020617;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+nav{
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  color: #38bdf8;
+  font-size: 1.7rem;
+}
+.nav-links{
+  display: flex;
+  list-style-type: none;
+  gap: 1.4rem;
+}
+.nav-links a{
+  text-decoration: none;
+  color: #e5e7eb;
+  position: relative;
+}
+.nav-links a::after{
+  position: absolute;
+  background-color: #38bdf8;
+  box-shadow: 0 0 10px #38bdf8;
+  transition: 0.3s;
+  content: "";
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+}
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+.nav-links a:hover{
+  color: #38bdf8
+}
+
+#nav-toggle{
+  display: none;
+}
+
+.hamburger{
+  display: none;
+  font-size: 1.8rem;
+  color: #e5e7eb;
+}
+.resume{
+  height:auto;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.resume-header{
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  margin: 0.3rem 0;
+  color: #38bdf8;
+}
+.resume-grid{
+  display: grid;
+  margin: auto;
+  padding: 1.5rem 2rem;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  gap: 3rem;
+}
+.right-col {
+  display: flex;
+}
+
+.right-col .box{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btn{
+  padding: 0.75rem 1.6rem;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  
+}
+.btn:hover {
+  background: #38bdf8;
+  color: #020617;
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+.box{
+  background-color: #020617;
+  border-left:2px solid #38bdf8 ;
+  padding: 1.3rem;
+}
+.box h2{
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+.box h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #38bdf8;
+  margin-top: 0.5rem;
+}
+.details{
+  padding-left: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.details h3{
+  color: #9be0fe;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+.date {
+  color: #38bdf8;
+  font-size: 0.85rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.board {
+  font-style: italic;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+.details p{
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+.bar {
+  width: 100%;
+  height: 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-top: 0.4rem;
+  overflow: hidden;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: #38bdf8;
+  border-radius: 10px;
+}
+
+
+
+.footer{
+  background: #020617;
+  text-align: center;
+  padding: 1.8rem 1rem;
+  font-size: 0.9rem;
+}
+.footer p {
+  color: #cbd5f5;
+  margin: 0.4rem 0;
+}
+.social-icons{
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons a{
+  width: 42px;
+  height: 42px;
+  border: 1px solid #38bdf8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #38bdf8;
+  transition: all 0.3s ease;
+}
+.social-icons a:hover {
+  background: #38bdf8;
+  color: #020617;
+  box-shadow: 0 0 12px #38bdf8;
+}
+.designer span {
+  color: #38bdf8;
+}
+@media(max-width:768px) {
+    .hamburger{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        top: 80px;
+        left:0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #020617;
+        padding: 1.5rem 0;
+
+    }
+    #nav-toggle:checked ~ .nav-links{
+        display: flex;
+    }
+    .resume-grid{
+      grid-template-columns: 1fr;
+      padding: 1rem;      
+    gap: 1.5rem;
+    }
+    .left-col,
+  .right-col {
+    width: 100%;
+  }
+.resume-header {
+    text-align: left;
+    padding: 0 1rem;
+  }
+  .box {
+    padding: 1rem;
+    border-left-width: 1.5px;
+  }
+
+  .details {
+    padding-left: 1rem;
+  }
+
+  .details h3 {
+    font-size: 1.2rem;
+  }
+
+  .details p {
+    font-size: 0.95rem;
+  }
+
+  .right-col .btn {
+    margin-top: 1rem;   /* remove big empty space on mobile */
+    align-self: flex-start;
+  }
+}
