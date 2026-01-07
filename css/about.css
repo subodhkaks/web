@@ -70,12 +70,6 @@ nav{
   color: #e5e7eb;
 }
 
-.footer{
-  background: #020617;
-  text-align: center;
-  padding: 1.8rem 1rem;
-  font-size: 0.9rem;
-}
 .about{
   height: calc(100vh - 80px);
   display: flex;
@@ -120,7 +114,7 @@ nav{
   height: 300px;
   width: 600px;
   border-radius: 5px;
-  max-width: 100%;
+  
   border: 1.5px solid #38bdf8;
   object-fit: cover;
 }
@@ -169,7 +163,7 @@ nav{
   padding: 0.75rem 1.6rem;
   border: 6px;
   text-decoration: none;
-  font-size: 0.9 rem;
+  font-size: 0.9rem;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -180,6 +174,7 @@ nav{
 .btn.primary {
   background: #38bdf8;
   color: #020617;
+  margin-bottom: 0.3rem;
 }
 
 .btn.primary:hover {
@@ -197,6 +192,12 @@ nav{
   background: #38bdf8;
   color: #020617;
   box-shadow: 0 0 15px #38bdf8;
+}
+.footer{
+  background: #020617;
+  text-align: center;
+  padding: 1.8rem 1rem;
+  font-size: 0.9rem;
 }
 .footer p {
   color: #cbd5f5;
@@ -273,6 +274,7 @@ nav{
   }
   .about-image img {
     max-height: 220px;
+    max-width: 100%;
     object-fit: cover;
   }
   .about-header h3 {
