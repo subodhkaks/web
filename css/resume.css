@@ -241,12 +241,12 @@ nav{
     .resume-grid{
       grid-template-columns: 1fr;
       padding: 1rem;      
-    gap: 1.5rem;
+      gap: 1.5rem;
     }
     .left-col,
-  .right-col {
-    width: 100%;
-  }
+    .right-col {
+      width: 100%;
+    }
 .resume-header {
     text-align: left;
     padding: 0 1rem;
@@ -269,7 +269,7 @@ nav{
   }
 
   .right-col .btn {
-    margin-top: 1rem;   /* remove big empty space on mobile */
+    margin-top: 1rem;
     align-self: flex-start;
   }
 }
