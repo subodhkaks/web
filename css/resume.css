@@ -152,6 +152,12 @@ nav{
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
+.bullet::before {
+  content: "• "; /* Unicode bullet */
+  color: #9be0fe;  /* bullet color */
+  margin-right: 5px;
+}
+
 .date {
   color: #38bdf8;
   font-size: 0.85rem;
