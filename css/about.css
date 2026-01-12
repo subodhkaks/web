@@ -59,6 +59,9 @@ nav{
 .nav-links a.active::after {
   width: 100%;
 }
+.nav-links a.active{
+    color: #38bdf8;
+}
 
 #nav-toggle{
   display: none;
@@ -93,7 +96,7 @@ nav{
   order: 1;
 }
 .about-header h3{
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   letter-spacing: 2px;
   margin: 0.3rem 0;
   color: #38bdf8;
@@ -200,7 +203,7 @@ nav{
   font-size: 0.9rem;
 }
 .footer p {
-  color: #cbd5f5;
+  color: #e5e7eb;
   margin: 0.4rem 0;
 }
 .social-icons{

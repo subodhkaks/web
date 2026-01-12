@@ -53,6 +53,9 @@ html, body{
 .nav-links a:hover{
   color: #38bdf8
 }
+.nav-links a.active{
+    color: #38bdf8;
+}
 .nav-links a:hover::after,
 .nav-links a.active::after {
   width: 100%;
@@ -146,7 +149,7 @@ html, body{
 }
 .footer p{
     margin: 0.4rem 0;
-    color: #cbd5f5;
+    color: #e5e7eb;
 }
 .social-icons{
     margin: 1rem 0;

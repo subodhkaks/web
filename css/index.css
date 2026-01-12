@@ -57,6 +57,9 @@ nav{
 .nav-links a.active::after {
   width: 100%;
 }
+.nav-links a.active{
+    color: #38bdf8;
+}
 .nav-links a:hover{
   color: #38bdf8
 }
@@ -131,7 +134,7 @@ nav{
   padding: 0.75rem 1.6rem;
   border: 6px;
   text-decoration: none;
-  font-size: 0.9 rem;
+  font-size: 0.9rem;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -165,7 +168,7 @@ nav{
 }
 
 .footer p {
-  color: #cbd5f5;
+  color: #e5e7eb;
   margin: 0.4rem 0;
 }
 .social-icons{
